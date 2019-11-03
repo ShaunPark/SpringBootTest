@@ -13,6 +13,18 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>kr.ne.coolage.Application</mainClass>
+							<addClasspath>true</addClasspath>
+							<addExtensions>true</addExtensions>
+							<packageName>kr.ne.coolage</packageName>
+						</manifest>
+
+					</archive>
+
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
