@@ -5,11 +5,16 @@
 	<groupId>SpringBootTest</groupId>
 	<artifactId>SpringBootTest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<!-- build> <sourceDirectory>src</sourceDirectory> <plugins> <plugin> <artifactId>maven-compiler-plugin</artifactId> 
-		<configuration> <release>11</release> </configuration> </plugin> </plugins> 
-		</build -->
+
 	<build>
+		<sourceDirectory>src</sourceDirectory>
 		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<release>8</release>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
