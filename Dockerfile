@@ -19,5 +19,7 @@ ARG JAR_FILE=target/SpringBootTest-0.0.1-SNAPSHOT.jar
 # Add the application's jar to the container
 COPY ${JAR_FILE} SpringBootTest.jar
 
+RUN bash -c 'touch /SpringBootTest.jar'
+
 # Run the jar file
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/SpringBootTest.jar"]
