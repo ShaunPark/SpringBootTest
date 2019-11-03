@@ -23,3 +23,5 @@
 hs_err_pid*
 
 target
+target/classes/META-INF/maven/SpringBootTest/SpringBootTest/pom.properties
+target/classes/META-INF/maven/SpringBootTest/SpringBootTest/pom.xml
